@@ -1,0 +1,101 @@
+{
+  "periodo": [
+    "2004-01",
+    "2026-10"
+  ],
+  "testes": {
+    "adf_estatistica": -9.102,
+    "adf_p": 0.0,
+    "kpss_estatistica": 0.08,
+    "kpss_p": 0.1,
+    "estacionaria": true
+  },
+  "forca_sazonal": 0.341,
+  "melhor_modelo": "Naive sazonal",
+  "metricas": [
+    {
+      "modelo": "Naive sazonal",
+      "MAE": 0.2178,
+      "RMSE": 0.2634,
+      "viés": 0.005,
+      "acerto_direcao": 0.6571
+    },
+    {
+      "modelo": "Ensemble",
+      "MAE": 0.2008,
+      "RMSE": 0.2711,
+      "viés": 0.0047,
+      "acerto_direcao": 0.5429
+    },
+    {
+      "modelo": "XGBoost",
+      "MAE": 0.2366,
+      "RMSE": 0.3037,
+      "viés": -0.0131,
+      "acerto_direcao": 0.3429
+    },
+    {
+      "modelo": "Regressão Ridge",
+      "MAE": 0.2402,
+      "RMSE": 0.3084,
+      "viés": 0.001,
+      "acerto_direcao": 0.3714
+    },
+    {
+      "modelo": "Média móvel 12m",
+      "MAE": 0.2397,
+      "RMSE": 0.3139,
+      "viés": -0.0061,
+      "acerto_direcao": 0.3429
+    },
+    {
+      "modelo": "SARIMA",
+      "MAE": 0.237,
+      "RMSE": 0.316,
+      "viés": 0.0259,
+      "acerto_direcao": 0.4
+    }
+  ],
+  "diebold_mariano_vs_naive": [
+    {
+      "modelo": "Média móvel 12m",
+      "DM": 1.0404,
+      "p": 0.3053
+    },
+    {
+      "modelo": "SARIMA",
+      "DM": 1.0819,
+      "p": 0.2867
+    },
+    {
+      "modelo": "Regressão Ridge",
+      "DM": 0.9495,
+      "p": 0.3489
+    },
+    {
+      "modelo": "XGBoost",
+      "DM": 0.9591,
+      "p": 0.3441
+    },
+    {
+      "modelo": "Ensemble",
+      "DM": 0.2001,
+      "p": 0.8426
+    }
+  ],
+  "previsao_12m": {
+    "2026-11": 0.296,
+    "2026-12": 0.362,
+    "2027-01": 0.399,
+    "2027-02": 0.442,
+    "2027-03": 0.514,
+    "2027-04": 0.483,
+    "2027-05": 0.476,
+    "2027-06": 0.391,
+    "2027-07": 0.373,
+    "2027-08": 0.305,
+    "2027-09": 0.519,
+    "2027-10": 0.398
+  },
+  "ipca_acumulado_12m_projetado": 5.07
+}
